@@ -18,10 +18,41 @@
     }
 }
 
+@media(min-width:500px){
+    .Open{
+        display: none;
+    }
+}
+@media(min-width:500px){
+    .Closed{
+        display: none;
+    }
+}
 .Open{
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top:0;
+    z-index:200;
+    background-color: white;
+    padding: 32px 60px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
     transform: translateX(0);
 }
 
 .Closed{
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color: white;
+    padding: 32px 60px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
     transform: translateX(-100%);
 }
